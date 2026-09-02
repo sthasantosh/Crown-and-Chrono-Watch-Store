@@ -1,0 +1,96 @@
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: #004030;
+    color: #FFCC00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url(finallogo1.png);
+    background-size: cover;
+    height: 60px;
+    width: 150px;
+}
+.main-section{
+    height: 360px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: blueviolet;
+    background-image: url(galaxy2.jpg);
+    background-size: cover;
+
+}
+.second-main{
+    height: 360px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: black;
+    background-image: url(galaxy3.jpg);
+    background-size: cover;
+}
+.box{
+    height: 200px;
+    width: 250px;
+    background-color: #004030;
+    /* color: goldenrod; */
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    border: 2px solid gold;
+}
+.box-content{
+    font-size: larger;
+    font-weight: 900;
+    /* font-family: arial; */
+}
+.box1{
+    background-image: url(premiumwatchesgif.gif);
+    background-size: cover;
+    font-family: cursive;
+    color: aqua;
+}
+.box2{
+    background-image: url(smartwatchgif.webp);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rosybrown;
+}
+.box3{
+    background-image: url(analog3.webp);
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gold;
+}
+.box4{
+    background-image: url(vintage\ watches\ gif.webp);
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+}
+.box a{
+    text-decoration: none;
+}
+.box1 a{
+    color: aqua;
+}
+.box2 a{
+    color: rosybrown;
+}
+.box3 a{
+    color: gold;
+}
+.box4 a{
+    color: pink;
+}
+

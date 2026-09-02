@@ -1,0 +1,63 @@
+
+p{
+    font-family: arial;
+    font-size: large;
+    color: #FFCC00;
+    line-height: 25px;
+    display: inline-block;
+}
+h2{
+    color: #FFCC00;
+    display: inline-block;
+}
+.blog-page{
+    height: 1000px;
+    width: 100%;
+    background-image: url(galaxy2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.intro{
+    height: 80px;
+     width: 75%;
+    margin-left: 13%;
+    background-image: url(galaxy2.jpg);
+    background-size: cover;
+}
+.smart-watches{
+    height: 200px;
+     width: 75%;
+     margin-top: 20px;
+    margin-left: 13%;
+    background-image: url(galaxy2.jpg);
+    background-size: cover;
+    margin-top: 20px;
+}
+.online-shopping{
+    height: 200px;
+     width: 75%;
+     margin-top: 20px;
+    margin-left: 13%;
+    background-image: url(galaxy2.jpg);
+    background-size: cover;
+}
+.Ai-sales{
+    height: 200px;
+     width: 75%;
+     margin-top: 20px;
+    margin-left: 13%;
+    background-image: url(galaxy2.jpg);
+    background-size: cover;
+}
+.transparency{
+    height: 200px;
+     width: 75%;
+     margin-top: 20px;
+    margin-left: 13%;
+    background-image: url(galaxy2.jpg);
+    background-size: cover;
+}

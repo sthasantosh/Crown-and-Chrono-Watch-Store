@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="me.css">
+     <style>
+    .navbar{
+    height: 70px;
+    width: 100%;
+    background-color: #004030;
+    color: #FFCC00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url(finallogo1.png);
+    background-size: cover;
+    height: 60px;
+    width: 150px;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+    <div class="navbar">
+      <div class="logo"></div>
+      <h2>Research Page</h2>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+  <h2>About Us</h2>
+  <p>Welcome to our online watch store! This website is a result of passionate learning and dedicated effort by a single developer aiming to bridge technology and style.</p>
+
+  <h3>👤 Developer Profile</h3>
+  <div style="text-align: center; margin-bottom: 20px;">
+  <img src="me.jpg" alt="Developer Photo" width="180" height="180" style="border-radius: 50%;">
+  <p><em>Developer: Santosh Shrestha</em></p>
+</div>
+
+  <ul>
+    <li>Name:Santosh Shrestha</li>
+    <li>Role: Web Designer & Developer (Solo)</li>
+    <li>Skills: HTML5, CSS3, Basic JavaScript, Web Design, Editing</li>
+    <li>Learning Source: Apna College (YouTube Tutorials)</li>
+    <li>Strengths:Front-end design, layout creativity, user interface structure</li>
+    <li>Experience: Personal projects and academic coursework</li>
+  </ul>
+
+  <h3>🛠️ Development Approach</h3>
+  <p>This website was built from scratch using HTML, CSS, and JavaScript. I focused on clean design, semantic structure, and responsive layout. JavaScript was used for basic interactivity such as form validation and content updates.</p>
+
+  <h3>🎯 Objective</h3>
+  <p>The main goal of this project was to implement an e-commerce solution for watch enthusiasts that is easy to use, visually attractive, and informative. It also serves as a platform to showcase my growing web development skills.</p>
+
+  <h3>📈 Future Improvements</h3>
+  <p>I aim to enhance this site by learning more advanced JavaScript, adding backend support, and implementing features like cart functionality and user login in the future.</p>
+</section>
+  </main>
+</body>
+<div class="contact">
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" placeholder="your@email.com"><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <p id="formMessage" style="color: red; margin-top: 10px;"></p>
+</section>
+
+<script>
+  function validateForm() {
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var message = document.getElementById("message").value.trim();
+    var error = "";
+
+    if (name === "" || email === "" || message === "") {
+      error = "All fields are required.";
+    } else if (!validateEmail(email)) {
+      error = "Please enter a valid email address.";
+    }
+
+    if (error) {
+      document.getElementById("formMessage").textContent = error;
+      return false;
+    } else {
+      document.getElementById("formMessage").style.color = "green";
+      document.getElementById("formMessage").textContent = "Form submitted successfully!";
+      return false;
+    }
+  }
+
+  function validateEmail(email) {
+    var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
+  }
+</script>
+</div>
+</html>
